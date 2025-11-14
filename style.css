@@ -1,4 +1,16 @@
 
+body {
+    color: #333333;
+    overflow-x: hidden;
+    }
+
+/**
+ * 1.3 - 汎用スタイル
+ */
+
+/* 2.0 - Sections */
+/* ============================================ */
+
 /**
  * 2.1 - ヘッダー
  */
@@ -11,7 +23,11 @@ header{
     right: 0;
     left: 0;
     border-bottom: solid;
+
     border-color: #eeeeee;
+    background-color: white;
+
+    z-index: 1000;
 }
 .main-Logo{
     margin-left: 10%;
@@ -41,3 +57,193 @@ header{
     width: 65%;
 }
 /**
+ * 2.2 - フッター
+ */
+footer{
+position: absolute;
+bottom: 0;
+width: 100vw;
+
+
+background-color: white;
+}
+.footer-logo{
+    display: flex;
+    justify-content: center;
+}
+.footer-link{
+    color: gray;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+.footer-icon-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.footer-icon-item{
+    list-style: none;
+    width:65%;
+}
+small{
+    display: flex;
+    justify-content:center ;
+    color: gray;
+}
+.copy{
+    border-top: solid;
+    border-color: #eeeeee;
+    padding:20px;
+
+}
+/**
+ * 2.3 - メインビジュアル
+ */
+body{
+    height: 5000px;
+    position: relative;
+    width: 100vw;
+
+}
+main{
+    width: 100vw;
+}
+.mainvisual{
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 900px;
+    background-image: url(../img/bg-mainvisual.jpg);
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: none;
+}
+.main-text{
+    position: absolute;
+    top: 600px ;
+    left: 10%;
+}
+.main-subtitle{
+    background-color: #eeeeee;
+    color: #0071BC;
+    font-family: Noto Sans JP;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 180%;
+    letter-spacing: 5%;
+    margin-right: 0px;
+    text-align: center;
+
+}
+.main-title{
+    background-color: #eeeeee;
+    font-family: Noto Sans JP;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 60px;
+    line-height: 180%;
+    letter-spacing: 5%;
+}
+.scroll-text{
+    position: absolute;
+    top:820px;
+    right:2%;
+    color:white;
+    font-weight: bold;
+}
+.scroll-text::before{
+    content:"";
+    background-color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    transform: translate(-20px,5px);
+}
+/**
+ * 2.4 - POSSEとは
+ */
+
+/**
+ * 2.5 - イベント
+ */
+.event{
+    width: 100vw;
+    position: absolute;
+    top:1000px;
+    display: block
+}
+.event-up{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    margin: auto;
+}
+.event-title{
+    display: flex;
+    justify-content: center;
+    font-family: Noto Sans JP;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 36px;
+    line-height: 150%;
+    letter-spacing: 5%;
+    text-align: center;
+
+}
+.event-subtitle{
+    display: flex;
+    justify-content: center;
+    font-family: Plus Jakarta Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 10%;
+    text-align: center;
+    color:#0071BC;
+}
+.event-text{
+    display: block;
+    text-align: center;
+}
+.event-down{
+    width: 100%;
+}
+.event-list{
+    margin:0;
+    padding:0;
+
+display:grid;
+grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+gap:28px;
+
+}
+.event-item{
+    list-style: none;
+    width: 100%;
+    height: auto;
+    background-color:#F7F9FB;
+    border-radius:16px;
+}
+.event-img{
+border-top-right-radius:16px;
+border-top-left-radius:16px ;
+display:block;
+width:100%;
+height:auto;                 /* 好みで 160–220px */
+object-fit:cover;
+}
+.event-date{
+    background-color: #0071BC;
+    color: #eeeeee;
+    border-radius: 16px;
+    margin: auto;
+    margin-top: 20px;
+    width: 40%;
+}
