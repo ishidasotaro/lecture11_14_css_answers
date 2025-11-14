@@ -1,16 +1,16 @@
-.event{
+.event　イベント全体{
     width: 100vw; 🟥サイトの横幅を画面幅100%に設定
     position: absolute;
     top:1000px;
     display: block
 }
-.event-up{
+.event-up　イベントの上半分{
     display: flex;
     justify-content: center;
     flex-direction:column;🟥並ぶ方向を縦に
     margin: auto;🟥外側の余白を左右均等につけることで、要素を真ん中におく
 }
-.event-title{
+.event-title　イベントの大文字タイトル{
     display: flex;
     justify-content: center;
     font-family: Noto Sans JP; 🟥フォントの種類をNoto Sans JPに設定
@@ -21,7 +21,7 @@
     letter-spacing: 5%; 🟥文字と文字の間を、文字サイズの5%分あける
     text-align: center; 🟥子要素（今回は文字）を横方向における真ん中に置く
 }
-.event-subtitle{
+.event-subtitle　イベントの小文字タイトル{
     display: flex;
     justify-content: center;
     font-family: Plus Jakarta Sans;
@@ -33,14 +33,14 @@
     text-align: center; 🟥子要素（今回は文字）を横方向における真ん中に置く
     color:#0071BC; 🟥文字の色を青色に設定
 }
-.event-text{
+.event-text　イベントの文章{
     display: block;
     text-align: center; 🟥子要素（今回は文字）を横方向における真ん中に置く
 }
-.event-down{
+.event-down　イベントの下半分{
     width: 100%; 🟥サイトの横幅を画面幅100%に設定
 }
-.event-list{
+.event-list　イベントのカードリストの全体{
     margin:0;
     padding:0;
 
@@ -51,14 +51,14 @@
     gap:28px;🟥子要素すべてに28pxの余白をつける
 
 }
-.event-item{
+.event-item　カード一枚の全体{
     list-style: none;
     width: 100%; 🟥サイトの横幅を画面幅100%に設定
     height: auto;
     background-color:#F7F9FB; 🟥背景色を淡いグレーに設定
     border-radius:16px; 🟥角を16px丸めてカード状にする
 }
-.event-img{
+.event-img　カードの画像{
     border-top-right-radius:16px; 🟥右上の角を16px丸める
     border-top-left-radius:16px ; 🟥左上の角を16px丸める
     display:block;
@@ -66,7 +66,7 @@
     height:auto;
     object-fit:cover; 🟥画像を要素全体を覆うようにトリミング
 }
-.event-date{
+.event-date　カードの日付{
     background-color: #0071BC; 🟥背景色を青に設定
     color: #eeeeee; 🟥文字色を白に設定
     border-radius: 16px; 🟥角を16px丸める
